@@ -1,1 +1,1 @@
-console.log(alert(prompt('input your HTML')));
+document.write(prompt('input your HTML'));
