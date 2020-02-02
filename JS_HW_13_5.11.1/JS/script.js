@@ -11,6 +11,14 @@ let names = [
 ]
 ]
 
+/*
 for(key in names) {
   console.log(names[key][key]);
 }
+*/
+
+names.forEach(function(entry) {
+  for(key in entry) {
+    console.log(entry[key]);
+  }
+})
