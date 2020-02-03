@@ -5,5 +5,10 @@ const insert = document.querySelector('.total');
 
 form.onsubmit = function(s) {
   s.preventDefault();
-  Math.sin(insert.innerHTML = form.elements.sinus.value);
+
+  let sinus = document.getElementById("quantity").value;
+
+//  console.log(Math.sin(sinus));
+  insert.innerHTML = Math.sin(sinus)
 }
+//переписать функцию так, чтобы в качестве параметра было значение из инпута
