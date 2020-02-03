@@ -3,6 +3,6 @@
 
 let resultNumber = prompt('insert number here');
 let number = (resultNumber) => {
-  return Math.abs(Math.pow(resultNumber, Math.floor(Math.random()*10+1)));
+  return Math.abs(Math.pow(resultNumber, Math.floor(Math.random()*9+1)));
 }
 console.log(number(resultNumber));
