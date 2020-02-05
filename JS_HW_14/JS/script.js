@@ -35,3 +35,6 @@ console.log(maxPrice);
 let strokeLength = Object.keys(maxPrice)
 
 console.log(strokeLength);
+//консоль: 
+//{name: "Bitcoin", price: 1388.37}
+//script.js:37 (2) ["name", "price"]
