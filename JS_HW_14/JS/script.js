@@ -56,3 +56,13 @@ let parLit = document.querySelector('.parLit');
 parBit.innerHTML = crypto[0]['price'];
 parEth.innerHTML = crypto[1]['price'];
 parLit.innerHTML = crypto[2]['price'];
+
+//добавим ещё названия валют в заголовки
+let hBit = document.querySelector('.hBit');
+let hEth = document.querySelector('.hEth');
+let hLit = document.querySelector('.hLit');
+
+//и их значения
+hBit.innerHTML = crypto[0]['name'];
+hEth.innerHTML = crypto[1]['name'];
+hLit.innerHTML = crypto[2]['name'];
