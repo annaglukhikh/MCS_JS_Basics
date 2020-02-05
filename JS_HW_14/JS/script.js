@@ -46,3 +46,13 @@ const lit = Number(newArr[2]);
 scaleBit.style.width = bit*100 + 'vw';
 scaleEth.style.width = eth*100 + 'vw';
 scaleLit.style.width = lit*100 + 'vw';
+
+//забыла, что цену мы вставляем в параграф. Создадим для этого переменные:
+let parBit = document.querySelector('.parBit');
+let parEth = document.querySelector('.parEth');
+let parLit = document.querySelector('.parLit');
+
+//цену из массива тащим в параграф:
+parBit.innerHTML = crypto[0]['price'];
+parEth.innerHTML = crypto[1]['price'];
+parLit.innerHTML = crypto[2]['price'];
