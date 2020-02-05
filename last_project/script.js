@@ -25,7 +25,7 @@ class Person {
 
 //копируем код из 28 проекта про XMLHTTPRequest со своим APIkey и ставим константу = Москва
     const APIKey = 'dac1a2350a8ff9e3b24b83c7e158f1b0';
-    const city = 'Москва';
+    const city = 'Майами';
 
     const url = 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+APIKey;
 
@@ -41,12 +41,13 @@ class Person {
 
 				let responseText = req.responseText;
         let responseObject = JSON.parse(responseText);
-        let Temp = responseObject.main.temp;
+        let Temp = responseObject.main.temp - 273.15;
         console.log(Temp)
 
 //Это лучше прописать ниже: в Москве из API и в случае если температура в цельсиях больше 15 градусов. увеличивает this.happiness на 1 и возвращает this.happiness (всегда возвращается this.happiness, независимо, увеличили на 1 или нет).
-                if(Temp < 15) {
+                if(Temp > 15) {
                 	++this.happiness
+									return this.happiness
                 } else {
                 	return this.happiness
                 }
@@ -77,13 +78,15 @@ const NewUser = new Person(nameElem[0].value)
 if(catElem[0].type == 'radio' && catElem[0].checked) {
 	NewUser.hasCat()
 }
+console.log(NewUser);
 if(restElem[0].type == 'radio' && restElem[0].checked) {
 	NewUser.hasRest()
 }
+console.log(NewUser);
 if(moneyElem[0].type == 'radio' && moneyElem[0].checked) {
 	NewUser.hasMoney()
 }
-
+console.log(NewUser);
 /*e. ﻿Вызывается метод isSunny() созданного экземпляра.
  f. ﻿Выбираются элементы .personName и .icon.
  g. ﻿В .personName вставьте namе экземпляра и знак : какой знак вставить, так и не понятно.
