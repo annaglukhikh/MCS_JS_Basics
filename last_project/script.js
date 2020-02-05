@@ -25,7 +25,7 @@ class Person {
 
 //копируем код из 28 проекта про XMLHTTPRequest со своим APIkey и ставим константу = Москва
     const APIKey = 'dac1a2350a8ff9e3b24b83c7e158f1b0';
-    const city = 'Майами';
+    const city = 'Москва';
 
     const url = 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+APIKey;
 
