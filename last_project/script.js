@@ -33,7 +33,7 @@ class Person {
 
 		let req = new XMLHttpRequest()
 
-		req.open(meth, url)
+		req.open(meth, url);
 		req.send();
 		req.addEventListener('readystatechange', function() {
 
