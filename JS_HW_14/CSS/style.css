@@ -10,9 +10,19 @@ body {
 	margin: 100px 50px;
 }
 
-.grade {
+.scaleOne {
+	height: 20px;
+	background-color: white;
+}
+
+.scaleTwo {
 	height: 20px;
 	background-color: blue;
+}
+
+.scaleThree {
+	height: 20px;
+	background-color: red;
 }
 
 h1 {
